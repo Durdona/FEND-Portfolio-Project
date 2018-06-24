@@ -1,3 +1,10 @@
+
+/* TODO:
+1. Fonts - the length of a line of text 45-90 cpl ideal measure 65 cpl;  use font-size: 16px and line-height: 1.2em; 
+ */
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Jura');
 
 * {
@@ -5,7 +12,9 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-}
+} 
+
+
 
 body {
         font-family: 'Jura', sans-serif;
@@ -29,5 +38,12 @@ body {
         left: 0;
         min-height: 110%;
         min-width: 100%;
+        -webkit-filter:  grayscale(10%);
         filter: grayscale(10%);
+}
+.logo {
+        width:  20%;
+        height: 20%;
+        float: right;
+        padding: 20px 20px 0 0;
 }
