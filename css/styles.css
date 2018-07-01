@@ -1,24 +1,24 @@
-
 /* TODO:
-1. Fonts - the length of a line of text 45-90 cpl ideal measure 65 cpl;  use font-size: 16px and line-height: 1.2em; 
+1. Fonts - the length of a line of text 45-90 cpl ideal measure 65 cpl;  use font-size: 16px and line-height: 1.2em;
+
  */
-
-
 
 @import url('https://fonts.googleapis.com/css?family=Jura');
 
+/*``````````` CSS Reset ```````````*/
 * {
-        /* default CSS reset */
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-} 
-
-
+}
 
 body {
         font-family: 'Jura', sans-serif;
+        width: 100%;
+        height: 100%;
 }
+
+/*``````````` Background Video ```````````*/
 
 .background_video {
         position: fixed;
@@ -33,17 +33,285 @@ body {
 }
 
 #back_video {
-        position: absolute;
-        bottom: 1;
-        left: 0;
         min-height: 110%;
         min-width: 100%;
-        -webkit-filter:  grayscale(10%);
-        filter: grayscale(10%);
+        -webkit-filter: grayscale(20%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(20%);
 }
-.logo {
-        width:  20%;
-        height: 20%;
+h1 {
+    margin-top:  10px;
+    padding-bottom: 10px;
+    width:  100%;
+    font-size:  1.8em;
+}
+
+/*``````````` Header ```````````*/
+
+header {
+        padding-top: 30px;
+}
+
+.header_box {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+.header_box .udacity_logo img {
+        max-width: 50%;
+}
+
+.header_box .personal_logo {
         float: right;
-        padding: 20px 20px 0 0;
+        max-width: 33.3%;
+        height: auto;
+}
+
+.header_box .udacity_logo {
+        float: left;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        background: rgba(7, 5, 55, 0.3); /* background with opacity */
+        border: 2px solid rgba(1, 179, 228);
+        border-radius: 50%;
+}
+
+.udacity_logo img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 35px;
+        text-align: center;
+        opacity: 1.0;
+}
+
+.container {
+        clear: both;
+}
+
+/*``````````` Navigation ```````````*/
+
+nav ul {
+        text-align: right;
+        color: #efefef;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+}
+
+nav ul li {
+        display: inline-block;
+        padding: 0 20px 8px 20px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+}
+
+nav ul li a {
+        position: relative;
+        display: inline-block;
+        padding: 0 0 10px 0;
+        color: #FFE699;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #000;
+}
+
+nav ul li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1.5px;
+        background: url('../img/underline.gif');
+        background-size: 120px 120px;
+        opacity: 0;
+        -webkit-transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        -ms-transition: opacity .2s;
+        -o-transition: opacity .2s;
+        transition: opacity .2s;
+        -webkit-animation: x-move 1s linear infinite;
+        animation: x-move 1s linear infinite;
+}
+
+nav ul li a:hover {
+        text-decoration: none;
+        /* color: rgba(1, 179, 228); */
+        /* color: #ee7622; */
+        color: #ffffff;
+        transition: color 0.5s ease-in-out;
+}
+
+nav ul li a:hover:after {
+        opacity: 1;
+}
+
+@-webkit-keyframes x-move {
+        0% {
+                background-position: 0 0;
+        }
+        100% {
+                background-position: 120px 0;
+        }
+}
+
+@keyframes x-move {
+        0% {
+                background-position: 0 0;
+        }
+        100% {
+                background-position: 120px 0;
+        }
+}
+
+/*``````````` Horizontal Line ```````````*/
+
+hr {
+        display: block;
+        position: relative;
+        margin: 10px auto;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        clear: both;
+        border: none;
+        border-top: 5px solid #ababab;
+        border-bottom: 5px solid #FFE699;
+}
+
+/*``````````` Article element 'About Me' ```````````*/
+.about_me_box .me{
+         border: 5px solid #ababab;
+         border-radius:  5px;
+         width:  100%;
+         opacity:  0.7;
+}
+.about_me_box .me:hover {
+    opacity:  1.0;
+    transition: opacity 1s ease-in-out;
+}
+.about_me {
+    background: rgba(7, 5, 55, 0.4);
+    margin-top:  10px;
+    padding:  20px;
+    border-radius:  5px;
+    color: #fcfcfc;
+    text-align:  justify;
+}
+
+
+/*``````````` Featured Works ```````````*/
+.featured_work_box img {
+
+        width: 100%;
+        height: 80%;
+        /* margin-right: 20px;
+        width: calc((100% - 20px) /3);   */
+}
+
+img:last-of-type {
+        margin-right: 0;
+}
+
+
+
+
+
+
+
+/* section element 'featured_work'  styles  */
+
+
+/* responsive Flexbox layout */
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+.box {
+        width: 100%;
+}
+.container_2 {
+    width: 100%;
+    margin-right:  auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 450px) {
+
+        .header_box .udacity_logo {
+                /*         width: 100px; 
+        height: 100px; */
+                display: none;
+        }
+        .header_box .udacity_logo img {
+                padding-top: 25px;
+        }
+        .header_box .personal_logo {
+                max-width: 100%;
+        }
+        nav ul {
+                float: right;
+                max-width: 100%;
+                text-align: justify;
+                padding-top: 15px;
+        }
+        nav ul li {
+            padding: 0px 8px 8px 8px;
+        }
+}
+
+@media screen and (min-width: 451px) and (max-width: 650px) {
+
+  .header_box .udacity_logo {
+        width: 100px; 
+        height: 100px;
+                 
+        }
+        .udacity_logo img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 25px;
+        text-align: center;
+        opacity: 1.0;
+}
+.header_box .personal_logo {
+                max-width: 70%;
+        }
+nav ul {
+                float: right;
+                max-width: 100%;
+                text-align: justify;
+                padding-top: 15px;
+        }
+nav ul li {
+            padding: 0px 8px 8px 8px;
+        }
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+        .project_one,
+        .project_two,
+        .project_three {
+                width: 33.3333%;
+                margin-left: auto;
+                margin-right: auto;
+        }
 }
