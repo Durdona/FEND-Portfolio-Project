@@ -395,19 +395,19 @@ footer .social-btn-list li a:hover {
 
 @media screen and (min-width: 451px) and (max-width: 650px) {
         .header_box .udacity_logo {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
         }
         .udacity_logo img {
                 width: 100%;
                 height: auto;
                 margin: 0 auto;
-                padding-top: 25px;
+                padding-top: 20px;
                 text-align: center;
                 opacity: 1.0;
         }
         .header_box .personal_logo {
-                max-width: 70%;
+                max-width: 72%;
         }
         nav ul {
                 float: right;

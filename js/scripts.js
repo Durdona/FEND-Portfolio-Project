@@ -1,4 +1,4 @@
- // Intro Page Opener 
+ // Intro Opener
 $().introtzikas({
    line: '#F56991',
    speedwidth: 2000, 
@@ -8,11 +8,12 @@ $().introtzikas({
 });
  
 
-// Background Video Settings
+
+// Background video settings
 var video = document.getElementById('back_video').playbackRate = 1;
 
 
-// About Me Paragraph Animation 
+// About Me paragraph animation 
 $('.tlt').textillate({ in: { effect: 'rollIn' } });
 
 
