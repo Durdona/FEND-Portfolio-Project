@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
         <head>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <title>Portfolio Project- Grow With Google Program</title>
-                <!--            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
                 <link rel="stylesheet" href="css/styles.css">
+                <link rel="stylesheet" href="css/animate.css">
         </head>
 
         <body>
                 <div class="background_video">
-                        <video id="back_video" src="video/background_video.mp4" preload="auto" autoplay="true" loop="true" muted="true"></video>
+                        <video id="back_video" src="video/background_video.mp4" preload="auto" autoplay loop muted></video>
                 </div>
+
                 <header class="header_box">
                         <div class="udacity_logo">
                                 <!-- <img src="img/udacity_logo_orange.png" alt="Udacity Logo"> -->
@@ -22,46 +24,66 @@
                         <nav>
                                 <img class="personal_logo" src="img/personal_logo.png" alt="Personal Logo">
                                 <ul>
-                                        <li><a href="#" data-scroll-target=".about">About</a></li>
-                                        <li><a href="#" data-scroll-target=".recent-projects">Projects</a></li>
-                                        <li><a href="#" data-scroll-target=".contact-me">Contact</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Contact</a></li>
                                 </ul>
-                                <!-- <div class="handle"><i class="fas fa-bars"></i></div> -->
                         </nav>
                 </header>
+
                 <div class="container">
+
                         <article class="box about_me_box">
                                 <hr>
-                                <img class="box me" src="img/me.png" sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="img/me.png 400w, img/me.png 800w" alt="photo of me">
-                                <p class="box about_me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque quaerat distinctio odio sed officiis obcaecati sit provident esse quidem saepe eius veritatis reiciendis, porro dicta corporis dolorum incidunt dolores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolores iste provident minima praesentium nobis autem, sed, nam voluptates aperiam in porro nemo at dolor voluptatibus dolorem repellat ipsam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque quaerat distinctio odio sed officiis obcaecati sit provident esse quidem saepe eius veritatis reiciendis, porro dicta corporis dolorum incidunt dolores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolores iste provident minima praesentium nobis autem, sed, nam voluptates aperiam in porro nemo at dolor voluptatibus dolorem repellat ipsam obcaecati.</p>
+                                <h2>About me</h2>
+                               <img class="box me" src="img/me.png" sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="img/me.png 400w, img/me.png 800w" alt="photo of me">
+                                <p class="about_me box">Hi there,<br> <span class="tlt"> Kindly allow me give a brief description about myself... I consider myself a self-taught Front-End Web Developer with inspirations. One of my main goals is to learn new things every day and never stop improving. This mindset has helped me have brighter and more positive outlook on life. I think of myself as a creative person and coding is one of my favorite aspects. I always constantly look for ways to improve my skills. I am a recent graduate B.S. student and looking for new opportunities to grow professionally and personally. I want to get involved in projects to gain more experience and advance my development career. My favorite part of being involved with project is also meeting new people in the tech industry. </span>
+                                </p>
+
                         </article>
-                        <section class="container_2 featured_work_box">
+
+                        <section class="container featured_work_box" id="container_2">
                                 <h1>Featured Works</h1>
-                                
-                                <div class="box project_one">
-                                        <img src="img/project_one.jpg" sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="img/project_one.jpg 400w, img/project_one.jpg 800w" alt="first project">
-                                        <h2>First Project</h2>
-                                        <p> GitHub Repository</p>
-                                        <!-- want to add GitHub icon next to a text and make it hyperlink -->
+                                <div class="box img_featured_work project_one">
+                                        <a href="https://codepen.io/Abdusamikovna/full/godwEL/ " target="_blank">
+                                        <img src="img/project_one.jpg" 
+                                        sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" 
+                                        srcset="img/project_one.jpg 400w, img/project_one.jpg 800w" alt="first project"></a>
+                                        <h2><a href="https://codepen.io/Abdusamikovna/full/dJqqWr/" target="_blank">Animal Card</a></h2>
+                                        <p><a href="https://github.com/Durdona/GrowWithGoogle-Animal-Trading-Cards-Project" target="_blank"><i class="fab fa-github"></i>GitHub</a></p>
                                 </div>
-                                <div class="box project_two">
-                                        <img src="img/project_two.jpg" sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="img/project_two.jpg 400w, img/project_two.jpg 800w" alt="second project">
-                                        <h2>Second Project</h2>
-                                        <p> GitHub Repository</p>
-                                        <!-- want to add GitHub icon next to a text and make it hyperlink -->
+                                <div class="box img_featured_work project_two">
+                                        <img src="img/project_two.jpg" 
+                                        sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" 
+                                        srcset="img/project_two.jpg 400w, img/project_two.jpg 800w" alt="second project">
+                                        <h2><a href="">Second </a> </h2>
+                                        <p><a href=""><i class="fab fa-github"></i>GitHub</a></p>
                                 </div>
-                                <div class="box project_three">
-                                        <img src="img/project_three.jpg" sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="img/project_three.jpg 400w, img/project_three.jpg 800w" alt="third project">
-                                        <h2>Third Project</h2>
-                                        <p> GitHub Repository</p>
-                                        <!-- want to add GitHub icon next to a text and make it hyperlink -->
+                                <div class="box img_featured_work project_three">
+                                        <img src="img/project_three.jpg" 
+                                        sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" 
+                                        srcset="img/project_three.jpg 400w, img/project_three.jpg 800w" alt="third project">
+                                        <h2><a href=""> Third </a></h2>
+                                        <p><a href=""><i class="fab fa-github"></i>GitHub</a></p>
                                 </div>
                         </section>
-                        <footer class="box footer_box">
-                                <!-- wanna add social media icons with Copyright section & coded with heart  -->
-                        </footer>
-                </div>
-                <script src="js/scripts.js"></script>
-        </body>
 
+                        <footer class="footer_box">
+                                <ul class="social-btn-list">
+                                        <li><a href="http://goo.gl/Q1NSnz" target="_blank" class="stackoverflow"><i class="fab fa-stack-overflow"></i></a></li>
+                                        <li><a href="https://github.com/Durdona" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="https://goo.gl/VJMK4U" target="_blank" class="codepen"><i class="fab fa-codepen"></i></a></li>
+                                        <li><a href="https://twitter.com/Abdusamikovna" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://goo.gl/d6mFdC" target="_blank" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                                <p>Coded with <i class="fa fa-heart"></i> by Durdona Abdusamikovna. All rights reserved 2018</p>
+                        </footer>
+
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="js/introtzikas.js"></script>
+                <script src="js/jquery.lettering.js"></script>
+                <script src="js/jquery.textillate.js"></script>
+                <script src="js/scripts.js"></script>                
+        </body>
 </html>
