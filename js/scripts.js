@@ -1,6 +1,7 @@
  // Intro Opener
 $().introtzikas({
-   line: '#F56991',
+   // line: '#F56991',
+   line: '#F8D9B2',
    speedwidth: 2000, 
    speedheight: 1000, 
    bg: '#1080C9',
